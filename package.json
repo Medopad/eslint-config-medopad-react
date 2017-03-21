@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-medopad-react",
+  "version": "0.0.0",
+  "description": "Medopad's ESLint configuration for React.",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "medopad",
+    "react"
+  ],
+  "license": "MIT",
+  "author": "Julius Osokinas <julius.osokinas@medopad.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medopad/eslint-config-medopad-react.git"
+  }
+}
