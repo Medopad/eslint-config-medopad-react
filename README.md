@@ -1,5 +1,6 @@
 # eslint-config-medopad-react
 
+[![Package Version](https://img.shields.io/npm/v/eslint-config-medopad-react.svg?style=flat-square)](https://npmjs.org/package/eslint-config-medopad-react)
 [![Travis CI Build Status](https://img.shields.io/travis/Medopad/eslint-config-medopad-react/master.svg?style=flat-square)](https://travis-ci.org/Medopad/eslint-config-medopad-react)
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 [![Medopad Code Style](https://img.shields.io/badge/code%20style-Medopad-brightgreen.svg?style=flat-square)](https://github.com/Medopad/eslint-config-medopad)
