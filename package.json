@@ -21,10 +21,10 @@
     "node": ">=5.0.0"
   },
   "dependencies": {
-    "eslint-config-standard-react": "^4.2.0",
-    "eslint-plugin-react": "^6.10.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-jest": "^19.0.0"
+    "eslint-config-standard-react": "4.2.x",
+    "eslint-plugin-react": "6.10.x",
+    "eslint-plugin-jsx-a11y": "4.0.x",
+    "eslint-plugin-jest": "19.0.x"
   },
   "peerDependencies": {
     "eslint-config-medopad": "^1.0.0"
