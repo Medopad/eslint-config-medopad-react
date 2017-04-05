@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-medopad-react",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Medopad's ESLint configuration for React.",
   "keywords": [
     "eslint",
