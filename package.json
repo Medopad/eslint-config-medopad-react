@@ -21,6 +21,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
+    "eslint": "3.19.x",
     "eslint-config-standard-react": "4.3.x",
     "eslint-plugin-react": "6.10.x",
     "eslint-plugin-jsx-a11y": "4.0.x",
@@ -30,6 +31,7 @@
     "eslint-config-medopad": "^2.0.0"
   },
   "devDependencies": {
+    "react": "^15.5.0",
     "mocha": "^3.0.0",
     "should": "^11.2.0"
   },

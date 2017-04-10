@@ -1,3 +1,4 @@
+const CLIEngine = require('eslint').CLIEngine
 const should = require('should')
 const config = require('./')
 
@@ -23,6 +24,28 @@ describe('Medopad\'s ESLint configuration for React', () => {
 
     config.plugins.forEach((plugin) => {
       (() => require.resolve(`eslint-plugin-${plugin}`)).should.not.throw()
+    })
+  })
+
+  describe('Rules', () => {
+    const cli = new CLIEngine({
+      configFile: 'index.js'
+    })
+
+    it('should validate `react/jsx-boolean-value`', () => {
+      const code = 'import React from \'react\'\n'
+
+      should(cli.executeOnText(
+        code + 'React.render(<input required={true} />)\n'
+      ).errorCount).equal(0)
+
+      should(cli.executeOnText(
+        code + 'React.render(<input required={false} />)\n'
+      ).errorCount).equal(0)
+
+      should(cli.executeOnText(
+        code + 'React.render(<input required />)\n'
+      ).errorCount).equal(1)
     })
   })
 })

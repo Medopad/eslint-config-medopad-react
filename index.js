@@ -12,5 +12,8 @@ module.exports = {
     'react',
     'jsx-a11y',
     'jest'
-  ]
+  ],
+  rules: {
+    'react/jsx-boolean-value': ['error', 'always']
+  }
 }
