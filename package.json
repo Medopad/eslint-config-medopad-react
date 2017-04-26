@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "eslint": "3.19.x",
-    "eslint-config-standard-react": "4.3.x",
+    "eslint-config-standard-react": "5.0.x",
     "eslint-plugin-react": "6.10.x",
     "eslint-plugin-jsx-a11y": "4.0.x",
     "eslint-plugin-jest": "19.0.x"
