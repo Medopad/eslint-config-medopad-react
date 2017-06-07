@@ -18,7 +18,7 @@ node_js:
   - 8
 
 before_script:
-  - npm install eslint-config-medopad
+  - npm install eslint-config-medopad --no-save
 
 deploy:
   provider: npm
