@@ -28,7 +28,7 @@
     "eslint-plugin-react": "^7.0.0"
   },
   "peerDependencies": {
-    "eslint-config-medopad": "^3.0.0",
+    "eslint-config-medopad": "^3.2.0",
     "lodash": "^4.17.0"
   },
   "devDependencies": {
