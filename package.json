@@ -21,15 +21,15 @@
     "node": ">=7.0.0"
   },
   "dependencies": {
-    "eslint": "3.19.x",
-    "eslint-config-standard-react": "5.0.x",
-    "eslint-plugin-react": "7.0.x",
-    "eslint-plugin-jsx-a11y": "5.0.x",
-    "eslint-plugin-jest": "20.0.x"
+    "eslint": "^3.19.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-jsx-a11y": "^5.0.0",
+    "eslint-plugin-jest": "^20.0.0"
   },
   "peerDependencies": {
     "eslint-config-medopad": "^3.0.0",
-    "lodash": "~4.17.0"
+    "lodash": "^4.17.0"
   },
   "devDependencies": {
     "react": "^15.5.0",
