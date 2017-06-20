@@ -26,8 +26,16 @@ extends:
 
 You can override settings from the shareable config by adding them directly into your `.eslintrc` file.
 
-## Test
+## Develop
+
+### Test
 
 ```
 npm test
+```
+
+### Release
+
+```
+npm version [major|minor|patch] -m "v%s"
 ```
