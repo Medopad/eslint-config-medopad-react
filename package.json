@@ -23,9 +23,9 @@
   "dependencies": {
     "eslint": "^4.0.0",
     "eslint-config-standard-react": "^5.0.0",
-    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-jest": "^20.0.0",
     "eslint-plugin-jsx-a11y": "^5.0.0",
-    "eslint-plugin-jest": "^20.0.0"
+    "eslint-plugin-react": "^7.0.0"
   },
   "peerDependencies": {
     "eslint-config-medopad": "^3.0.0",
