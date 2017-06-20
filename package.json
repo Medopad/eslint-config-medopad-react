@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-medopad-react",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Medopad's ESLint configuration for React.",
   "keywords": [
     "eslint",
@@ -21,15 +21,15 @@
     "node": ">=7.0.0"
   },
   "dependencies": {
-    "eslint": "3.19.x",
-    "eslint-config-standard-react": "5.0.x",
-    "eslint-plugin-react": "7.0.x",
-    "eslint-plugin-jsx-a11y": "5.0.x",
-    "eslint-plugin-jest": "20.0.x"
+    "eslint": "^4.0.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-jest": "^20.0.0",
+    "eslint-plugin-jsx-a11y": "^5.0.0",
+    "eslint-plugin-react": "^7.0.0"
   },
   "peerDependencies": {
-    "eslint-config-medopad": "^3.0.0",
-    "lodash": "~4.17.0"
+    "eslint-config-medopad": "^3.2.0",
+    "lodash": "^4.17.0"
   },
   "devDependencies": {
     "react": "^15.5.0",
@@ -37,6 +37,8 @@
     "should": "^11.2.0"
   },
   "scripts": {
-    "test": "eslint . && mocha *.test.js"
+    "postinstall": "npm install eslint-config-medopad --no-save",
+    "test": "eslint . && mocha *.test.js",
+    "preversion": "npm test"
   }
 }
