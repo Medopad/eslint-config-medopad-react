@@ -37,7 +37,6 @@
     "should": "^11.2.0"
   },
   "scripts": {
-    "postinstall": "npm install eslint-config-medopad --no-save",
     "test": "eslint . && mocha *.test.js",
     "preversion": "npm test"
   }

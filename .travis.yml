@@ -17,6 +17,9 @@ node_js:
   - 7
   - 8
 
+before_script:
+  - npm install eslint-config-medopad --no-save
+
 deploy:
   provider: npm
   email: j.osokinas@gmail.com
