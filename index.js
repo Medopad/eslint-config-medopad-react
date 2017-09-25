@@ -22,6 +22,7 @@ module.exports = {
         ]
       }
     ],
+    'react/jsx-closing-bracket-location': ['warn', 'tag-aligned'],
     'react/jsx-boolean-value': ['error', 'always']
   }
 }
