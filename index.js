@@ -14,6 +14,14 @@ module.exports = {
     'jest'
   ],
   rules: {
+    'node/no-unsupported-features': [
+      'error',
+      {
+        'ignores': [
+          'modules'
+        ]
+      }
+    ],
     'react/jsx-boolean-value': ['error', 'always']
   }
 }
