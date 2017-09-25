@@ -36,6 +36,12 @@ describe('Medopad\'s ESLint configuration for React', () => {
       configFile: 'index.js'
     })
 
+    it('should validate `node/no-unsupported-features`', () => {
+      should(cli.executeOnText(
+        'export const test = \'This is only a test\'\n'
+      ).errorCount).equal(0)
+    })
+
     it('should validate `react/jsx-boolean-value`', () => {
       const code = 'import React from \'react\'\n'
 
