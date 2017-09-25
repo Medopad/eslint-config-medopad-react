@@ -42,6 +42,35 @@ describe('Medopad\'s ESLint configuration for React', () => {
       ).errorCount).equal(0)
     })
 
+    it('should validate `jsx-closing-bracket-location`', () => {
+      const code = 'import React from \'react\'\n'
+
+      should(cli.executeOnText(
+        code + 'React.render(<span style={{color: \'blue\'}}>Test</span>)\n'
+      ).warningCount).equal(0)
+
+      should(cli.executeOnText(
+        code +
+          'React.render(\n' +
+          '  <span\n' +
+          '    style={{color: \'blue\'}}\n' +
+          '  >\n' +
+          '    Test\n' +
+          '  </span>\n' +
+          ')\n'
+      ).warningCount).equal(0)
+
+      should(cli.executeOnText(
+        code +
+          'React.render(\n' +
+          '  <span\n' +
+          '    style={{color: \'blue\'}}>\n' +
+          '    Test\n' +
+          '  </span>\n' +
+          ')\n'
+      ).warningCount).equal(1)
+    })
+
     it('should validate `react/jsx-boolean-value`', () => {
       const code = 'import React from \'react\'\n'
 
